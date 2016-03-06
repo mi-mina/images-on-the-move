@@ -15,6 +15,25 @@ a {
   a:hover {
     text-decoration: underline; }
 
+#contenedor {
+  position: relative;
+  overflow:hidden;
+  width: 1000px;
+  height: 1000px;
+}
+
+.ontop {
+  position: relative;
+  z-index:1000;
+}
+
+/*.boton {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  width: 100px;
+}*/
+
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
@@ -57,11 +76,11 @@ a {
   color: #fff;
   text-align: center;
   background-color: #159957;
-  background-image: linear-gradient(120deg, #155799, #159957); }
+  background-image: linear-gradient(120deg, #6732ff, #32ffbb); }
 
 @media screen and (min-width: 64em) {
   .page-header {
-    padding: 5rem 6rem; } }
+    padding: 3rem 4rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .page-header {
