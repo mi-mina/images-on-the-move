@@ -1,20 +1,22 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en">
 
   <head>
     <meta charset="UTF-8">
     <title>Images on the move</title>
     <link rel="stylesheet" href="css/styles.css" >
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   </head>
 
-  <body onload="load_images(); ">
+  <body onload="on_load(); ">
       <form class="ontop" action="" method="get">
         <br>
-        <label for="pattern">Choose a pattern:</label>
-        <select class="" name="pattern" id="pattern">
-          <option value="circles" selected>circles</option>
-          <option value="triangles">triangles</option>
-          <option value="flowers">flowers</option>
+        <label for="select">Choose a pattern:</label>
+        <select class="" name="pattern" id="select">
+          <!-- <option value="0circles" selected>circles</option>
+          <option value="0triangles">triangles</option>
+          <option value="0hexagones">hexagones</option>
+          <option value="0flowers">flowers</option> -->
         </select>
       </form>
     <button onclick="clearInterval(the_timer); move();" class="btn ontop">Start!</button>
